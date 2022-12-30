@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>VNOM</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+    <meta name="author" content="3rd Wave Media">    
+    <link rel="shortcut icon" href="../images/fevicon.png">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="../fonts/font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+ 
+    <link id="theme-style" rel="stylesheet" href="../css/styles.css">
+    
+</head> 
+
+<body>
+    <form method="POST" class="register-form" id="register-form" action="" enctype="multipart/form-data">
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="../images/user_pt.png" width="16%" style="border-radius: 100%; border: 3px solid #fff; "/>
+            <div class="profile-content pull-left">
+                <h1 class="name">Nome do Administrador</h1>
+                <h2 class="desc">Administrador</h2>   
+                <ul class="social list-inline">
+                    <li><a href="perfil_adm_pessoas.html"><i class="fa fa-users"></i></a></li>
+                    <li><a href="#" style="background-color:black"><i class="fa fa-briefcase"></i></a></li>  
+                    <li><select required class="btn btn-secondary dropdown-toggle" class="dropdown-menu" name="uf_estado" style="background-color: black; margin-top: 0%;">
+                       <option value="" selected>Todos</option>
+                       <option value="">Educação e Cultura</option>
+                       <option value=" ">Estética e Beleza</option>
+                       <option value="">Limpeza e Conservação</option>
+                       <option value="">Reformas e Serviços Gerais</option>
+                       <option value="">Manutenção Automotiva</option>
+                       <option value="">Festas e Eventos</option>
+                       <option value="">Saúde e Bem Estar</option>
+                       <option value="">Tecnologia</option>
+                       <option value="">Transporte</option>
+                       <option value="">Outro</option>
+                       <option value="">Denunciados</option>
+                     </select></li>
+                    <!-- <li><a href="#"><i class="fa fa-list-alt"></i></a></li>
+                    <li><a href="#"><i class="fa fa-list"></i></a></li>                   
+                    <li><a href="#"><i class="fa fa-wrench"></i></a></li>   
+                    <li><a href="#"><i class="fa fa-exclamation"></i></a></li> -->
+                </ul> 
+            </div><!--//profile-->
+        </div><!--//container-->
+    </header><!--//header-->
+    <center>
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-sm-12 col-xs-12">
+                <div class="wrap-input100 validate-input">
+                    <h1 class="cad" id="list_tile">Solicitações</h1> 
+                 </div>
+                 
+                <input type="text" placeholder="Procure..." style=" width: 70%;">
+                     <button type="submit"><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </button>
+            </div><!--//primary-->
+    </div>
+        </div>
+        <div>
+            <center> 
+                <table border = "1">
+                <tr>
+                <th class="tab"> Título </th>
+                <th class="tab"> Descrição </th>
+                <th class="tab"> Prazo </th>
+                <th class="tab"> Preço </th>
+                <th class="tab"> Carga H. </th>
+                <th class="tab"> Atendimento </th>
+                <th class="tab"> Local </th>
+                <th class="tab"> Equipamento </th>
+                <th class="tab"> Categoria </th>
+                
+                <th colspan="2" id="acoes"> Ações </th>
+                </tr>
+                
+                <!-- <?php
+                include 'conect.php';
+                include 'session.php';
+                
+                $list_aluno = $sql -> query("SELECT * FROM aluno ORDER BY nome ASC");
+                
+                while ($linha = mysqli_fetch_array($list_aluno)){
+                $rm = $linha['rm'];
+                $nome = $linha['nome'];
+                $data_nasc = $linha['data_nasc'];
+                $sexo = $linha['sexo'];
+                $email = $linha['email'];
+                $senha = $linha['senha'];
+                $obs = $linha['obs'];
+                $avatar = $linha['avatar'];
+                
+                echo "<tr>
+                <td class='tab2'> <a href= '../php/updateimg.php?rm= $rm'> <img src = ../$avatar heigth = 150px width = 150px> </a> </td>
+                <td class='tab2'> $rm </td>
+                <td class='tab2'> $nome </td>
+                <td class='tab2'> $data_nasc </td>
+                <td class='tab2'> $sexo </td>
+                <td class='tab2'> $email </td>
+                <td class='tab2'> $senha </td>
+                <td class='tab2'> $obs </td>
+                <td id='tab3'> <a id='tab3' href = '../php/update.php?rm= $rm'> ALTERAR </a> </td>
+                <td id='tab4'> <a id='tab4' href = '../php/delete.php?rm= $rm' onclick=\"return confirm ('Deseja apagar os dados?');\"> EXCLUIR </a> </td>
+                </tr>";
+                }
+                echo "</table>
+                </center>";
+                ?> -->
+        </div>
+       
+            </aside><!--//aside-->
+            
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+   
+    </form>
+             
+               
+                
+              
+  
+    <!-- Javascript -->          
+    <script type="text/javascript" src="../plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="../js/main2.js"></script>            
+</body>
+</html> 
+
