@@ -1,0 +1,27 @@
+#erro{
+    animation: mudar 5s;
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background:#03989E;
+    background: -webkit-linear-gradient(-135deg, #03989E, #4158d0);
+    background: -o-linear-gradient(-135deg,#03989E, #4158d0);
+    background: -moz-linear-gradient(-135deg, #03989E, #4158d0);
+    background: linear-gradient(-135deg, #03989E, #4158d0);
+  }
+
+  @keyframes mudar{
+from {background:#2e2e31;
+
+}
+
+to {background:#4158d0;}
+  }
